@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOLAÍ | Portal Esportivo</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f5f8;
+  color: #171923;
+}
+
+header {
+  background: #101b35;
+  color: white;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -2px;
+}
+
+.logo span {
+  color: #36a3ff;
+}
+
+header p {
+  color: #c5cee0;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+nav {
+  background: #fff;
+  padding: 16px 7%;
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  text-decoration: none;
+  color: #18213a;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  color: #1687ed;
+}
+
+main {
+  max-width: 1150px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-left: 5px solid #1687ed;
+  padding-left: 12px;
+}
+
+.feature {
+  background: #101b35;
+  border-radius: 12px;
+  overflow: hidden;
+  color: white;
+  margin-bottom: 35px;
+}
+
+.feature img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 520px;
+}
+
+.feature-content {
+  padding: 25px;
+}
+
+.tag {
+  color: #39a3ff;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.feature h1 {
+  font-size: clamp(25px, 4vw, 38px);
+  margin: 12px 0;
+}
+
+.feature p {
+  color: #d4d9e5;
+  line-height: 1.6;
+}
+
+.read {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 20px;
+  background: #1687ed;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.news-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #e4e6ec;
+}
+
+.news-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.news-card p {
+  color: #626979;
+  line-height: 1.5;
+}
+
+footer {
+  background: #101b35;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 50px;
+}
+
+footer p {
+  color: #c5cee0;
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    padding: 15px 20px;
+    gap: 20px;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    margin-top: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <div class="logo">BOLA<span>Í</span></div>
+    <p>INFORMAÇÃO QUE JOGA JUNTO.</p>
+  </div>
+  <div>PORTAL JORNALÍSTICO ESPORTIVO</div>
+</header>
+
+<nav>
+  <a href="#">Início</a>
+  <a href="#brasileirao">Brasileirão</a>
+  <a href="#futebol">Futebol</a>
+  <a href="#analises">Análises</a>
+  <a href="#entrevistas">Entrevistas</a>
+</nav>
+
+<main>
+
+  <h2 class="section-title">DESTAQUE DO DIA</h2>
+
+  <article class="feature">
+    <img src="palmeiras-flamengo.png"
+         alt="Destaque Palmeiras e Flamengo">
+
+    <div class="feature-content">
+      <span class="tag">Brasileirão • Futebol</span>
+
+      <h1>Grande decisão? Palmeiras e Flamengo se enfrentam neste sábado</h1>
+
+      <p>
+        Dois gigantes do futebol brasileiro entram em campo
+        em um confronto que promete movimentar o Brasileirão.
+        Confira os detalhes desse grande duelo.
+      </p>
+
+      <a class="read" href="#materia">
+        Leia a notícia →
+      </a>
+    </div>
+  </article>
+
+  <section id="brasileirao">
+    <h2 class="section-title">ÚLTIMAS NOTÍCIAS</h2>
+
+    <div class="news-grid">
+
+      <article class="news-card">
+        <span class="tag">Brasileirão</span>
+        <h3>O futebol brasileiro em destaque</h3>
+        <p>
+          Acompanhe as principais informações,
+          resultados e novidades do campeonato.
+        </p>
+      </article>
+
+      <article class="news-card">
+        <span class="tag">Análise</span>
+        <h3>Além das quatro linhas</h3>
+        <p>
+          Opiniões, análises e comentários
+          sobre os principais acontecimentos do futebol.
+        </p>
+      </article>
+
+      <article class="news-card" id="analises">
+        <span class="tag">Entrevistas</span>
+        <h3>Quem faz o futebol acontecer</h3>
+        <p>
+          Histórias e entrevistas com personagens
+          do esporte.
+        </p>
+      </article>
+
+      <article class="news-card" id="entrevistas">
+        <span class="tag">Futebol</span>
+        <h3>Informação que joga junto</h3>
+        <p>
+          O BOLAÍ acompanha você dentro e fora
+          dos gramados.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <div id="materia"></div>
+
+</main>
+
+<footer>
+  <div class="logo">BOLA<span>Í</span></div>
+  <p>Informação que joga junto.</p>
+  <p>Portal Jornalístico Esportivo</p>
+  <p>© 2026 BOLAÍ. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
